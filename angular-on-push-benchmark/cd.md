@@ -223,7 +223,7 @@ Components with more complex user interactions *(Component1, Component2)* still 
 *Component5* showed the most significant improvement among those still performing some CD cycles *(97.7% reduction)*.  
 The behavior of *Component3* and *Component4* demonstrates that purely visual components can be completely isolated from the change detection cycle when properly implemented with OnPush.
 
-Therefore, implementing the *OnPush* strategy proves to be a **fundamental best practice** for developing high-performance Angular applications, especially in complex data visualization scenarios like *RailStudio*.  
+Therefore, implementing the *OnPush* strategy proves to be a **fundamental best practice** for developing high-performance Angular applications, especially in complex data visualization scenarios.
 The results clearly demonstrate that proper management of change detection can drastically reduce computational load, significantly improving UI responsiveness and overall application efficiency.
 
 <p style="font-size: 0.8em; text-align: center; margin-top: 30px;">
@@ -235,7 +235,7 @@ The `ng.profiler.timeChangeDetection()` function, when passed the parameter `{re
 
 Therefore, the following test consists of executing `ng.profiler.timeChangeDetection({record:true})` for the **Page4 (Comparison View)** in both change detection strategies: *Default* and *OnPush*, and then comparing the results.
 
-The tests are always performed under the same configuration between the two versions of RailStudio.
+The tests are always performed under the same configuration between the two versions of te application.
 
 The images below show the **"Performance"** tab of the browser’s **(Chrome DevTools)** developer tools, which displays the results of a performance profile recorded during the benchmark execution.
 
